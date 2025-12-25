@@ -5,8 +5,8 @@
 # You will be writing your code in the function named 'greet', which is the entry point of the program.
 # Write/update your code in the space outlined by comments.
 # To test your code using the tests provided, run the following command in your terminal:
-# pytest 
+# pytest tests/P1.py
 
 def greet():
     # Update below line of code to finish assignment
-    return "Hello, World!"
+    return ""
