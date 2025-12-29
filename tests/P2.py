@@ -58,7 +58,7 @@ def test_calculator_dispatcher(num1, num2, operator, resultType, expected):
     result = calculator(num1, num2, operator, resultType)
 
     # If expected is a pytest.approx object use approximate comparison
-    if isinstance(expected, pytest.approx.__class__):
+    if isinstance(expected, type(pytest.approx(0))):
         assert result == expected
         assert isinstance(result, float)
     elif expected == "ERROR!":

@@ -28,7 +28,12 @@ def divide(num1, num2):
 
 def calculator(num1, num2, operator, resultType):
     result = 0
-    # Update below lines so that the operations are conditional 
-    # (Remember how to implement conditions in Python from the reference video)
+
+    # Add conditional (operator) logic here
+
+
+    # Convert result to specified type (Remember to handle the scenario where division by zero occurs)
+
 
     return result
+# END OF CODE
