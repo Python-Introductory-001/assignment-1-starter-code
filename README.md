@@ -53,6 +53,28 @@ Welcome to Assignment 1. This repository contains two small, beginner-friendly p
 	pytest -q
 	```
 
+**Problem 3 — P3**
+
+- Goal: Analyze enzyme activity measurements and classify them as `low`, `normal`, or `high` and compute simple summary statistics.
+- Where to work: edit `P3/enzymes-analyzer.py`.
+- Key functions:
+  - `classify_activity(activity_value)` — returns `'low'`, `'normal'`, or `'high'` according to the ranges:
+    - below 40: `low`
+    - 40–70 (inclusive): `normal`
+    - above 70: `high`
+  - `analyze_activities(activity_list)` — returns a dictionary with keys: `low_count`, `normal_count`, `high_count`, `average_activity`, `min_activity`, `max_activity`, and `normal_values` (a list of values classified as normal in input order).
+  - `print_summary(results, total_samples)` — prints a human-readable summary of the results.
+- What the tests check: boundary classifications (40 and 70 inclusive), correct counts, correct average/min/max calculations, preservation of `normal_values` order, and formatted summary output.
+
+**Running P3 tests**
+
+- Run only P3 tests:
+
+	```bash
+	pytest tests/P3.py -q
+	```
+
+
 If you do not have `pytest` installed, you can still run Python files directly while developing, but the test commands above are the recommended check before submitting.
 
 **Submission & Tips**
